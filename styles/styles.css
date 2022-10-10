@@ -35,20 +35,20 @@ img{
 .container{
     margin: 0px auto;
     width: 1200px;
-  
+    padding: 0px 15px; 
 }
 /* header */
 .header{
     margin-bottom: 0px;
-
     border-bottom: 1px solid  #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .top{
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 25px;
+
 }
 .nav, .navigation, .adress{
     display: flex;
@@ -205,10 +205,9 @@ img{
 .bottom{
     background-color: var(--secondary-bcg-color);
     color: var(--white-color);
-}
-.bottom .container{
     padding: 60px 0px;
 }
+
 .footer-logo{
     margin-right: 0px;
     margin-bottom: 20px;
@@ -234,8 +233,8 @@ img{
 }
 
 .portfolio-content{
-    width: 1200px;
-    margin: 79px auto 109px auto;
+    padding-top: 79px;
+    padding-bottom: 109px;
 }
 /* filter */
 .filter{
@@ -269,7 +268,7 @@ img{
     justify-content: space-between;
 }
 .portfolio-item{
-    border:1px solid #EEEEEE;
+    outline:1px solid #EEEEEE;
 }
 .portfolio-info{
     padding: 20px 24px;
