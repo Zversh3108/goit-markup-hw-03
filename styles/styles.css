@@ -232,10 +232,6 @@ img{
     color: var(--brand-color);
 }
 
-.portfolio-content{
-    padding-top: 79px;
-    padding-bottom: 109px;
-}
 /* filter */
 .filter{
     display: flex;
