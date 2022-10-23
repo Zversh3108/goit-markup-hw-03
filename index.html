@@ -18,13 +18,13 @@
                 <a lang="en" class="logo link" href="index.html"><span class="logo-word">Web</span>Studio</a>
                 <ul class="navigation list">
                     <li class="nav-item">
-                        <a class="nav-item link" href="#">Студія</a>
+                        <a class="link active-page nav-item-links "  href="#">Студія</a>
                     </li >
                     <li class="nav-item">
-                        <a class="nav-item link" href="portfolio.html">Портфоліо</a>
+                        <a class="link nav-item-links" href="portfolio.html">Портфоліо</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item link" href="#">Контакти</a>
+                        <a class="link nav-item-links" href="#">Контакти</a>
                     </li>
                 </ul>
             </nav>
@@ -52,7 +52,7 @@
         <section class="title-section">
             <div class="hero container">
                 <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="order button " type="button">Замовити послугу</button>
+                <button class="order button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="section-info section">
@@ -83,12 +83,27 @@
                 <ul class="images list">    
                     <li class="images-item">
                         <img src="images/what_we_do_first.jpg" alt="Людина друкує код на планшеті" width="370" height="294">
+                        <div class="images-discription">
+                            <p>
+                                Десктопні додатки
+                            </p>
+                        </div>
                     </li>
                     <li class="images-item">    
                         <img src="images/what_we_do_second.jpg" alt="Людина друкує на телефоні і комп'ютері" width="370" height="294">
+                        <div class="images-discription">
+                            <p>
+                                Мобільні додатки
+                            </p>
+                        </div>
                     </li>
                     <li class="images-item">
-                        <img src="images/what_we_do_third.jpg" alt="Людина обирає колір на планшеті" width="370" height="294"> 
+                        <img src="images/what_we_do_third.jpg" alt="Людина обирає колір на планшеті" width="370" height="294">
+                        <div class="images-discription">
+                            <p>
+                                Дизайнерські рішення
+                            </p>
+                        </div>
                     </li>
                 </ul>    
             </div>
@@ -351,5 +366,15 @@
             </div>
         </div>    
     </footer>
-    </body>
-    </html>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-button" type="button" data-modal-close>
+                <svg class="icon" width = "18px" height="18px">
+                    <use href="symbol-defs.svg#icon-close-button"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
